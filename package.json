@@ -1,0 +1,22 @@
+{
+  "name": "blog-grid-design",
+  "version": "1.0.0",
+  "description": "A blog design blog built using ReactJs and webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshnesh/blog-grid-design.git"
+  },
+  "author": "Antony Ng'ang'a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meshnesh/blog-grid-design/issues"
+  },
+  "homepage": "https://github.com/meshnesh/blog-grid-design#readme",
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  }
+}
