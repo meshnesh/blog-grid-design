@@ -1,11 +1,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import {App} from './js/components/App';
 
 ReactDOM.render( 
-    <h1>
-        Grid layout
-    </h1> ,
+    <App/>,
     document.getElementById('root')
 );
