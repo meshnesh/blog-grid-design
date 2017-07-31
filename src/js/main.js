@@ -1,13 +1,3 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2015, Codrops
- * http://www.codrops.com
- */
 (function() {
 
     var bodyEl = document.body,
@@ -44,10 +34,7 @@
         menuCtrl = document.getElementById('menu-toggle'),
         menuCloseCtrl = sidebarEl.querySelector('.close-button');
 
-    /**
-     * gets the viewport width and height
-     * based on http://responsejs.com/labs/dimensions/
-     */
+
     function getViewport(axis) {
         var client, inner;
         if (axis === 'x') {

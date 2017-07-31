@@ -36,7 +36,7 @@ export class App extends React.Component {
                     </div>
                 </header>
                 {
-                    posts.map((p, i) => <Post {...p} i={i} key={i}/> )
+                    Posts.map((p, i) => <Post {...p} i={i} key={i}/> )
                 }
                 <footer className="page-meta">
                     <span>Load more...</span>

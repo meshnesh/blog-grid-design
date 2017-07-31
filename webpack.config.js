@@ -10,7 +10,7 @@ const isProd = process.env.NODE_ENV === "production";
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 const cssProd = ExtractTextPlugin.extract({
     fallback: "style-loader",
-    use: ["css-loader", 'sass-loader', 'css-loader?sourceMap!sass-loader?config=sassLoader'],
+    use: ["css-loader", 'sass-loader'],
     publicPath: './dist'
 })
 
@@ -28,7 +28,6 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].bundle.js'
     },
-    devtool: "source-map",
     module: {
         rules: [{
                 test: /(\.scss|\.css)$/,
@@ -66,7 +65,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Grid Layout Blog',
+            title: 'Blog Grid Layout ',
             minify: {
                 collapseWhitespace: false
             },
