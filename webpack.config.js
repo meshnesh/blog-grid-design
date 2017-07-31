@@ -26,7 +26,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: 'js/[name].bundle.js'
     },
     devtool: "source-map",
     module: {
@@ -68,13 +68,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Grid Layout Blog',
             minify: {
-                collapseWhitespace: true
+                collapseWhitespace: false
             },
             hash: true,
             template: './src/index.ejs',
         }),
         new ExtractTextPlugin({
-            filename: '[name].css',
+            filename: 'css/[name].css',
             allChunks: true,
             disable: !isProd
         }),
